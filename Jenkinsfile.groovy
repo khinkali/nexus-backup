@@ -23,7 +23,7 @@ podTemplate(label: 'mypod', containers: [
 
             def kc = 'kubectl'
             def containerPath = '/nexus-data'
-            def containerName = 'nexus'
+            def containerName = 'clone-repo'
             def podLabel = 'app=nexus'
             def repositoryUrl = 'bitbucket.org/khinkali/nexus_backup'
             container('kubectl') {
